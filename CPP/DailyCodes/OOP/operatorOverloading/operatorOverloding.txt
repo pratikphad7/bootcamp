@@ -1,0 +1,13 @@
+
+
+	* Operating overloading mhanje jeva apan ekhada object print karto teva to operator<<(cout,obj) asa call 		karto ani tyala hya typech preDefined function bhetat nahi teva apan tyach function lihaych hech		operating overloading ahe;
+	
+	* operating overloading 3 type ne lihtat
+		1)friend function ne
+		2)normal function ne(pan class madhe member function lihav lagte private variable access karayla 		3)member function ne(jeva apan [std::cout<<obj1+obj2;] as lihto teva call asa jato 
+						
+						obj1.operator+(obj2) :-> operator(obj1,obj2)
+						and operator+(Demo& obj){
+							return obj.x+this->x
+						}
+						ksran this pointer allready ahe mhanun ekch object pathavava
