@@ -12,9 +12,7 @@ class one{
 			std::cout<<x<<std::endl;
 		}
 		
-		accessData(const two& obj){
-			obj.printData();
-		}
+		void accessData(const two& obj);
 };
 
 class two{
@@ -29,12 +27,12 @@ class two{
 };
 
 void one::accessData(const two& obj){
-	obj.printData();
+	obj.getData();
 }
 
 int main(){
 	one obj;
 	two obj2;
-	obj2.getData(obj);
+	obj.accessData(obj2);
 	return 0;
 }
